@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Fustat:wght@200..800&family=Moon+Dance&family=New+Amsterdam&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family:"New Amsterdam", serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.name{
+    color: orangered;
+}
+header{
+    height: 100vh;
+    background: url(img/freepik__background-burger-and-pizza-landscape__74239.jpeg) center center/cover no-repeat;
+    position: relative;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 50px;
+    font-size: 20px;
+}
+#navbar ul li a{
+    padding: 30px 40px;
+    color: white;
+    font-weight: 400;
+}
+#navbar ul li a:hover{
+    color:orangered;
+    transition: 1s;
+
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+#header .content .h1{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+#header .content .p{
+    margin: 20px 0;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 70;
+    width: 100;
+    background-color: black;
+}
