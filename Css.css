@@ -40,7 +40,7 @@ a{
 }
 .btn-secondary{
     color: #fff;
-    background: #383848;
+    background: #000000;
     margin-top: 2rem;
 }
 
@@ -48,7 +48,7 @@ header{
     height: 100vh;
     background: url(img/freepik__background-burger-and-pizza-landscape__74239.jpeg) center center/cover no-repeat;
     position: relative;
-    opacity: 0.8;
+
 }
 #navbar{
     display: flex;
@@ -80,7 +80,8 @@ header .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    margin: 40px;
     height: 75vh;
 }
 #header .content .h1{
@@ -90,14 +91,11 @@ header .content{
 #header .content .p{
     margin: 20px 0;
 }
-header::before{
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 70;
-    width: 100;
-    background-color: black;
+h1{
+    font-size: 45px;
+}
+p{
+    font-size: 20px;
 }
 #about{
     height: 80vh;
@@ -116,8 +114,8 @@ header::before{
     margin-bottom: 20px;
 }
 #about .title p{
-    font-size: 14px;
-    color: #383838;
+    font-size: 20px;
+    color: #000000;
     font-weight: 600;
 }
 #about .about-content{
@@ -128,7 +126,7 @@ header::before{
     width: 400px;
 }
 #about .about-content p{
-    color: #383838;
+    color: #000000;
     margin-right: 7rem;
     font-weight: 500;
     line-height: 1.6;
