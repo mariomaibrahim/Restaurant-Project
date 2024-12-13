@@ -1,3 +1,4 @@
+
 *{
     padding: 0%;
     margin: 0%;
@@ -142,6 +143,7 @@ p{
 #offers{
     height: 80vh;
     display: flex;
+
     justify-content: center;
     background: url('./img/back7.jpeg') center center/cover fixed;
 }
@@ -155,18 +157,20 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0;
     color: #ffffff;
 }
 #offers .offers-items img{
-    width: 200px;
+    width: 250px;
 }
 #offers .offers-items h3{
     font-size: 25px;
     margin: 15px 0;
+    color: rgb(255, 255, 255);
 }
 #offers .offers-items p{
     font-size: 14px;
-    padding: 0 20px;
+    padding: 0 10px;
     font-weight: 100;
     margin-bottom: 15px;
 }
@@ -265,7 +269,7 @@ input:valid ~ label {
     padding: 0 35px 0 5px;
     color: #fff;
 }
-.inputbox ion-icon {
+.inputbox .ion-icon {
     position: absolute;
     right: 8px;
     color: #fff;
@@ -293,4 +297,118 @@ button {
     color: #ffffff;
     padding: 15px 0;
     font-size: 14px;
+}
+#testimonial-heading{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+a{
+    text-decoration: none;
+}
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+#testimonials-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#testimonials-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+}
+#testimonials-heading span{
+    font-size: 1.3rem;
+    color: #000000;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#testimonials-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+#testimonials-box{
+    width: 500px;
+    box-shadow: 2px 2px 3 white;
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #000000;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #ffd900;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+font-size: 0.9rem;
+color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-1);
+    transition: all ease 0.3s;
+}
+@media(max-width:1060px){
+    .testimonial-box{
+        width: 45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width: 100%;
+    }
+}
+    .testimonial-heading h1{
+        font-size: 1.4rem;
 }
