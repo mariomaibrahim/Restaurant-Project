@@ -298,22 +298,22 @@ button {
     padding: 15px 0;
     font-size: 14px;
 }
-#testimonial-heading{
+.testimonial-heading{
     margin: 0;
     padding: 0;
     font-family: poppins;
 }
-a{
+.a{
     text-decoration: none;
 }
-#testimonials{
+.testimonials{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
 }
-#testimonials-heading{
+.testimonials-heading{
     letter-spacing: 1px;
     margin: 30px 0px;
     padding: 10px 20px;
@@ -322,28 +322,28 @@ a{
     justify-content: center;
     align-items: center;
 }
-#testimonials-heading h1{
+.testimonials-heading h1{
     font-size: 2.2rem;
     font-weight: 500;
     background-color: #000000;
     color: white;
     padding: 10px 20px;
 }
-#testimonials-heading span{
+.testimonials-heading span{
     font-size: 1.3rem;
     color: #000000;
     margin-bottom: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-#testimonials-box-container{
+.testimonials-box-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
 }
-#testimonials-box{
+.testimonials-box{
     width: 500px;
     box-shadow: 2px 2px 3 white;
     background-color: #fff;
@@ -391,7 +391,8 @@ a{
     margin-bottom: 20px;
 }
 .client-comment p{
-font-size: 0.9rem;
+    align-items: center;
+font-size: 0.8rem;
 color: #4b4b4b;
 }
 .testimonial-box:hover{
