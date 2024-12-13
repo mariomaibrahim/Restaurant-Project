@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Grill</title>
     <link rel="stylesheet" href="Css.css">
+    <link rel="icon" href="./img/white icon.ico">
     <style>
         /* Style the navigation bar */
         #content .h1 {
@@ -34,7 +35,7 @@
         <div class="content">
             <h1 style="color: white;margin-bottom: 1rem;">Welcome To <span class="name">Hot Grill</span> Restaurant</h1>
             <p style="color: beige; margin-left: 60px;">Here you can find Most delicacies food in the world</p>
-            <div class="bo" style="margin-left: 150px;"><a href="a" class="btn btn-primary">Book a Table</a></div>
+            <div class="bo" style="margin-left: 150px;"><a href="#the-form" class="btn btn-primary">Book a Table</a></div>
         </div>
     </header>
 
@@ -42,7 +43,7 @@
         <section id="about">
             <div class="container">
                 <div class="title">
-                    <h2>THE<b style="color:orangered ;"> Gallery </b>HISTORY</h2>
+                    <h2>THE<b style="color:orangered ;"> HOT GRILL </b>HISTORY</h2>
                     <p>MORE THANE 19+ YEARS OF EXPERIENCE</p>
                 </div>
                 <div class="about-content">
@@ -52,7 +53,7 @@
                             itaque, molestiae architecto quia perspiciatis quisquam blanditiis.</p>
                         <a href="#" class="btn btn-secondary">LEARN MORE</a>
                     </div>
-                    <video src="./img/pu2.mp4" autoplay loop>logo</video>
+                    <video src="./img/pu2.mp4" autoplay loop></video>
                 </div>
             </div>
         </section>
@@ -64,33 +65,78 @@
                 </div>
                 <div class="offers-items">
                     <div>
-                        <img src="./img/offersbu.png" alt="PIZZA">
+                        <img src="./img/offer1.jpg" alt="PIZZA">
                         <div>
                             <h3>offer 1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minima eum velit, libero assumenda nostrum quibusdam expedita dolore dolorem molestias quo eveniet nisi architecto facilis, sequi, earum enim doloribus. Laudantium.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minima eum velit, libero
+                                assumenda nostrum quibusdam expedita dolore dolorem molestias quo eveniet nisi
+                                architecto facilis, sequi, earum enim doloribus. Laudantium.</p>
                             <p><del>$150.00</del><span class="prtext"> $99.00</span></p>
                         </div>
                     </div>
                     <div>
-                        <img src="./img/offersbu.png" alt="PIZZA">
+                        <img src="./img/pizza8.jpg" alt="PIZZA">
                         <div>
                             <h3>offer 2</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus suscipit dolore blanditiis placeat reprehenderit soluta impedit, eum asperiores inventore officia culpa harum commodi earum ipsam rerum molestias numquam odit aspernatur!</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus suscipit dolore
+                                blanditiis placeat reprehenderit soluta impedit, eum asperiores inventore officia culpa
+                                harum commodi earum ipsam rerum molestias numquam odit aspernatur!</p>
                             <p><del>$150.00</del><span class="prtext"> $99.00</span></p>
                         </div>
                     </div>
                     <div>
-                        <img src="./img/offersbu.png" alt="PIZZA">
+                        <img src="./img/offer3.png" alt="PIZZA">
                         <div>
                             <h3>offer 3</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima possimus repellendus iusto eveniet distinctio temporibus sint debitis repudiandae dolorem dicta deserunt inventore facilis, quis corrupti nemo adipisci culpa aliquam veniam?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima possimus repellendus
+                                iusto eveniet distinctio temporibus sint debitis repudiandae dolorem dicta deserunt
+                                inventore facilis, quis corrupti nemo adipisci culpa aliquam veniam?</p>
                             <p><del>$150.00</del><span class="prtext"> $99.00</span></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!--\\\\\\\\\\\the book table start\\\\\\\\\\\\\\\\\\-->
+        <section id="the-form">
+            <div class="form-box">
+
+                <form>
+                    <h2>BOOK A TABLE</h2>
+
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <label>YOUR NAME</label>
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" required>
+                        <label>EMAIL ADDRESS</label>
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                    <div class="inputbox2">
+                        <input type="datetime-local" required min="2025-1-11T00:00">
+                        <label>DATA & TIME RESERVATION</label>
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                    <div class="inputbox2">
+                        <input type="number" required min="1" max="9" placeholder="ENTER NUMBER OF GUESTS">
+                        <label>GUESTS</label>
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                    <button type="submit">RESERVATION</button>
+                </form>
+            </div>
+
+        </section>
+        <!--\\\\\\\\\\\the book table end\\\\\\\\\\\\\\\\\\-->
+
     </main>
+    <!--\\\\\\\\\\\the footer start\\\\\\\\\\\\\\\\\\-->
+    <footer id="footer">
+        <p>copyright &copy; 2025 All rights reserved | Made by <b><a style="color: orangered;" href="hot gril"> MARYAM'S
+                </a></b></p>
+    </footer>
 </body>
 
 </html>
