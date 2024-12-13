@@ -136,3 +136,31 @@ p{
     text-transform: lowercase;
     line-height: 1.6;
 }
+#offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: auto;
+    align-items: center;
+    text-align: center;
+}#offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: black;
+    font-size: 30px;
+}
+#offers h3{
+    color: rgb(0, 0, 0);
+}
+#offers .title{
+    color: #ffffff;
+    font-weight: 500;
+}
+#offers .offers-items img{
+max-width:300px;
+}
+#offers .offers-items h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
