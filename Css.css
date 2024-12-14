@@ -1,4 +1,3 @@
-
 *{
     padding: 0%;
     margin: 0%;
@@ -40,7 +39,6 @@ a{
 }
 .btn-primary:hover, .btn-secondary:hover, button:hover{
     background:orangered ;
-    transition: 0.8s;
 }
 .btn-secondary{
     color: #fff;
@@ -132,7 +130,7 @@ p{
 #about .about-content video{
     width: 100%;
     height: 500px;
-    margin-top: -90px;
+    margin-top: -100px;
 }
 #about .about-content p{
     color: #ffffff;
@@ -182,7 +180,7 @@ p{
     color: orangered;
 }
 /* \\\\\\\\\\\the book start//////////////////// */
-section {
+#the-form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +190,6 @@ section {
     background-position: center;
     background-size: cover;
   }
-  
 .form-box {
     position: relative;
     width: 400px;
@@ -299,24 +296,19 @@ button {
     padding: 15px 0;
     font-size: 14px;
 }
-.testimonial-heading{
-    margin: 0;
-    padding: 0;
-    font-family: poppins;
-}
-.a{
-    text-decoration: none;
-}
-.testimonials{
+/* ////////////////////////////////// */
+#testimonials{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
     width: 100%;
-}
-.testimonials-heading{
+    background-color:#000000;
+    background-position: center;
+    background-size: cover;
+ }
+.testimonial-heading{
     letter-spacing: 1px;
     margin: 30px 0px;
     padding: 10px 20px;
@@ -325,16 +317,15 @@ button {
     justify-content: center;
     align-items: center;
 }
-.testimonials-heading h1{
+.testimonial-heading h1{
     font-size: 2.2rem;
     font-weight: 500;
-    background-color: #000000;
-    color: white;
+    color: #ffffff;
     padding: 10px 20px;
 }
-.testimonials-heading span{
+.testimonial-heading span{
     font-size: 1.3rem;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -343,12 +334,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
 }
 .testimonials-box{
     width: 500px;
-    box-shadow: 2px 2px 3 white;
+    box-shadow: 2px 2px 3px white;
     background-color: #fff;
     padding: 20px;
     margin: 15px;
@@ -357,7 +348,7 @@ button {
 .profile-img{
     width: 50px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
 }
@@ -385,18 +376,55 @@ button {
     font-size: 0.8rem;
 }
 .reviews{
-    color: #ffd900;
-}
-.star-rating {
     display: flex;
     direction: rtl; 
     cursor: pointer;
 }
-.star-rating span {
+.reviews span{
     font-size: 30px; 
-    color: #ffc800; 
+    color: #ccc; 
+}
+.reviews span:hover{
+    font-size: 30px; 
+    color: orangered; 
+}
+/* ////////////test1////////////// */
+.star-widget {
+    display: inline-flex;
+    direction: rtl; /* لجعل النجوم تبدأ من اليمين */
 }
 
+.star-widget input {
+    display: none; /* إخفاء الراديو */
+}
+
+.star-widget label {
+    font-size: 2rem;
+    color: #ccc; /* اللون الافتراضي للنجوم */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* التأثير عند التمرير */
+.star-widget label:hover,
+.star-widget label:hover ~ label {
+    color: #f5c518; /* اللون عند التمرير */
+}
+
+/* تثبيت التقييم عند النقر */
+.star-widget input:checked ~ label {
+    color: #f5c518; /* لون النجوم المثبتة */
+}
+
+/* جعل النجوم المضيئة قبل النجمة المختارة */
+.star-widget input#rate-1:checked ~ label,
+.star-widget input#rate-2:checked ~ label,
+.star-widget input#rate-3:checked ~ label,
+.star-widget input#rate-4:checked ~ label,
+.star-widget input#rate-5:checked ~ label {
+    color: #f5c518;
+}
+/* ////////////////////////// */
 .box-top{
     display: flex;
     justify-content: space-between;
@@ -404,12 +432,11 @@ button {
     margin-bottom: 20px;
 }
 .client-comment p{
-    align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #4b4b4b;
 }
 .testimonial-box:hover{
-    transform: translateY(1);
+    transform: translateY(-10px);
     transition: all ease 0.3s;
 }
 @media(max-width:1060px){
@@ -422,7 +449,21 @@ button {
     .testimonial-box{
         width: 100%;
     }
-}
     .testimonial-heading h1{
         font-size: 1.4rem;
+}
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #000000;
 }
