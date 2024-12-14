@@ -40,6 +40,7 @@ a{
 }
 .btn-primary:hover, .btn-secondary:hover, button:hover{
     background:orangered ;
+    transition: 0.8s;
 }
 .btn-secondary{
     color: #fff;
@@ -308,7 +309,9 @@ button {
 }
 .testimonials{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -384,6 +387,16 @@ button {
 .reviews{
     color: #ffd900;
 }
+.star-rating {
+    display: flex;
+    direction: rtl; 
+    cursor: pointer;
+}
+.star-rating span {
+    font-size: 30px; 
+    color: #ffc800; 
+}
+
 .box-top{
     display: flex;
     justify-content: space-between;
@@ -392,11 +405,11 @@ button {
 }
 .client-comment p{
     align-items: center;
-font-size: 0.8rem;
-color: #4b4b4b;
+    font-size: 0.8rem;
+    color: #4b4b4b;
 }
 .testimonial-box:hover{
-    transform: translateY(-1);
+    transform: translateY(1);
     transition: all ease 0.3s;
 }
 @media(max-width:1060px){
