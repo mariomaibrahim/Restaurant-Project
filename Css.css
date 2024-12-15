@@ -35,10 +35,12 @@ a{
 .btn-primary{
     color: #fff;
     border: 1px solid #fff;
-    margin-top: 2rem;
+    margin-top: 7rem;
+    
 }
 .btn-primary:hover, .btn-secondary:hover, button:hover{
     background:orangered ;
+    transition: 0.7s;
 }
 .btn-secondary{
     color: #fff;
@@ -129,7 +131,7 @@ p{
 }
 #about .about-content video{
     width: 100%;
-    height: 500px;
+    height: 470px;
     margin-top: -100px;
 }
 #about .about-content p{
@@ -186,7 +188,7 @@ p{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url("./img/form4.jpg") no-repeat;
+    background: url("img/img/360_F_918840281_VvmdwOojo3KOJdHVpg7Jb5NihBvKIh1b.jpg") no-repeat;
     background-position: center;
     background-size: cover;
   }
@@ -382,16 +384,11 @@ button {
 }
 .reviews span{
     font-size: 30px; 
-    color: #ccc; 
-}
-.reviews span:hover{
-    font-size: 30px; 
-    color: orangered; 
+    color: #f5c518; 
 }
 /* ////////////test1////////////// */
 .star-widget {
     display: inline-flex;
-    direction: rtl; /* لجعل النجوم تبدأ من اليمين */
 }
 
 .star-widget input {
@@ -400,7 +397,7 @@ button {
 
 .star-widget label {
     font-size: 2rem;
-    color: #ccc; /* اللون الافتراضي للنجوم */
+    color: #f5c518; /* اللون الافتراضي للنجوم */
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -414,15 +411,6 @@ button {
 /* تثبيت التقييم عند النقر */
 .star-widget input:checked ~ label {
     color: #f5c518; /* لون النجوم المثبتة */
-}
-
-/* جعل النجوم المضيئة قبل النجمة المختارة */
-.star-widget input#rate-1:checked ~ label,
-.star-widget input#rate-2:checked ~ label,
-.star-widget input#rate-3:checked ~ label,
-.star-widget input#rate-4:checked ~ label,
-.star-widget input#rate-5:checked ~ label {
-    color: #f5c518;
 }
 /* ////////////////////////// */
 .box-top{
